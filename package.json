@@ -1,11 +1,11 @@
 {
   "name": "algojs-collections",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "It provides Javascript implementation of fundamental data types, algorithms and data structures.",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angiolep/algojs.git"
+    "url": "git+https://github.com/angiolep/algojs-collections.git"
   },
   "keywords": [
     "algo",

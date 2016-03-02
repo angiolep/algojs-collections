@@ -20,7 +20,7 @@ describe('Iterable', function(){
   it('should extends the Traversable class', function() {
     expect(iterable).to.be.an.instanceof(trav.Traversable);
   });
-  it('should implement the foreach methods'/* TODO , function() {
-    expect(iterable.foreach.bind(iterable)).to.not.throw(ex);
-  }*/);
+  it('should implement the foreach methods' , function() {
+    expect(iterable.foreach.bind(iterable)).to.throw(ex);
+  });
 });

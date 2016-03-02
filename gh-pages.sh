@@ -6,7 +6,7 @@ if [ -d tmp ]; then rm -Rf tmp; fi
 mkdir tmp && cd tmp
 git clone git@github.com:angiolep/algojs-collections.git --single-branch
 
-cd algojs
+cd algojs-collections
 git checkout --orphan gh-pages
 git rm -rf .
 
