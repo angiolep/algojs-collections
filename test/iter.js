@@ -4,6 +4,7 @@ var expect = require('chai').expect;
 
 var ex = 'UnsupportedOperationException';
 
+
 describe('Iterator', function() {
   var iterator = new collections.Iterator();
   it('should define abstract methods', function() {
@@ -17,8 +18,8 @@ describe('Iterator', function() {
 describe('Iterable', function(){
   var iterable = new collections.Iterable();
   
-  it('should extend Traversable', function() {
-    expect(iterable).to.be.an.instanceof(collections.Traversable);
+  it('should inherit from Traversable', function() {
+    expect(iterable).to.be.instanceof(collections.Traversable);
   });
   
   it('should implement the foreach method' , function() {
