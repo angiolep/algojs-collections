@@ -41,8 +41,9 @@ gulp.task('test', ['pre-test'], function () {
 
 
 gulp.task('doc', function (cb) {
+  var config = require('./jsdoc.json');
   gulp.src(['README.md', './lib/**/*.js'], {read: false})
-      .pipe(jsdoc(cb));
+      .pipe(jsdoc(config, cb));
 });
 
 

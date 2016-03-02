@@ -11,14 +11,22 @@ Here there are some examples. API docs are published <a href="http://angiolep.gi
 npm install algojs-collections --save
 ```
 
+
+### LinkedList
+
 ```javascript
 var collections = require('algojs-collections');
 
-var stack = new collections.Stack();
-stack.push(39);
-stack.push(12);
-stack.push(99);
-console.log(stack.top());
+var list1 = collections.LinkedList.create();
+var list2 = list1.cons('Riding', 'a');
+
+var list3 = collections.LinkedList.create('is', 'nice');
+var list4 = list3.cons('bike');
+
+var list5 = list4.concat(list2);
+
+var println = function(elem) { console.log(elem); };
+list5.foreach(println);
 ```
 
 [npm-image]: https://badge.fury.io/js/algojs-collections.svg

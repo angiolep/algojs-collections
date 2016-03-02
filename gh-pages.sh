@@ -10,7 +10,7 @@ cd algojs-collections
 git checkout --orphan gh-pages
 git rm -rf .
 
-cp -rp ../../docs/gen/* .
+cp -rp ../../docs/* .
 
 git add -A .
 git commit -am 'seed gh-pages'
