@@ -1,0 +1,37 @@
+{
+  "name": "algojs-collections",
+  "version": "0.1.0",
+  "description": "It provides Javascript implementation of fundamental data types, algorithms and data structures.",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angiolep/algojs.git"
+  },
+  "keywords": [
+    "algo",
+    "algorithms"
+  ],
+  "author": "Paolo Angioletti",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/angiolep/algojs-collections/issues"
+  },
+  "homepage": "https://github.com/angiolep/algojs-collections#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.8",
+    "gulp": "^3.9.1",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-jshint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "ink-docstrap": "^1.1.2",
+    "istanbul": "^0.4.2",
+    "jsdoc": "^3.4.0",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "algojs-sorting": "^0.2.1"
+  }
+}
