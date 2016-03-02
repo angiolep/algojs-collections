@@ -1,4 +1,4 @@
-var Traversable = require('../lib/traversable');
+var Traversable = require('../lib/traversable').Traversable;
 var expect = require('chai').expect;
 
 

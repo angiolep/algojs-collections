@@ -1,7 +1,8 @@
 # algojs-collections
-It provides Javascript implementation of fundamental sorting algorithms.
+It provides Javascript implementation of fundamental collections.
 
 [![npm version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url]
+
 
 ## Examples
 Here there are some examples. API docs are published <a href="http://angiolep.github.io/algojs-collections" target="_blank">here</a>.

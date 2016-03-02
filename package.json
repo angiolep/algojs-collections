@@ -1,6 +1,6 @@
 {
   "name": "algojs-collections",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "It provides Javascript implementation of fundamental data types, algorithms and data structures.",
   "main": "lib/index.js",
   "repository": {
