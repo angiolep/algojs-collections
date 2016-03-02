@@ -22,6 +22,7 @@
     "coveralls": "^2.11.8",
     "gulp": "^3.9.1",
     "gulp-istanbul": "^0.10.3",
+    "gulp-jsdoc3": "^0.2.0",
     "gulp-jshint": "^2.0.0",
     "gulp-mocha": "^2.2.0",
     "ink-docstrap": "^1.1.2",

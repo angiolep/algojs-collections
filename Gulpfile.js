@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var mocha = require('gulp-mocha');
 var istanbul = require('gulp-istanbul');
+var jsdoc = require('gulp-jsdoc3');
 
 
 
@@ -35,6 +36,13 @@ gulp.task('test', ['pre-test'], function () {
       .pipe(istanbul.writeReports())
       // Enforce a coverage of at least 90%
       .pipe(istanbul.enforceThresholds({ thresholds: { global: 90 } }));
+});
+
+
+
+gulp.task('doc', function (cb) {
+  gulp.src(['README.md', './lib/**/*.js'], {read: false})
+      .pipe(jsdoc(cb));
 });
 
 
