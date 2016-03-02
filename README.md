@@ -36,5 +36,5 @@ list5.foreach(println);
 [travis-url]: https://travis-ci.org/angiolep/algojs-collections
 
 [coveralls-image]: https://coveralls.io/repos/github/angiolep/algojs-collections/badge.svg?branch=master
-[coveralls-url]: (https://coveralls.io/github/angiolep/algojs-collections?branch=master)
+[coveralls-url]: https://coveralls.io/github/angiolep/algojs-collections?branch=master
 

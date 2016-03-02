@@ -17,7 +17,7 @@ describe('Iterator', function() {
 describe('Iterable', function(){
   var iterable = new collections.Iterable();
   
-  it('should extends Traversable', function() {
+  it('should extend Traversable', function() {
     expect(iterable).to.be.an.instanceof(collections.Traversable);
   });
   

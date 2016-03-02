@@ -4,7 +4,7 @@ var expect = require('chai').expect;
 
 describe('LinkedList', function() {
 
-  var nil = collections.LinkedList.create();
+  var nil = collections.LinkedList.empty();
   var list = collections.LinkedList.create('paolo', 345, 'angioletti');
 
   describe('as LinkedList', function() {
@@ -19,6 +19,10 @@ describe('LinkedList', function() {
 
     it('should create Cons node', function() {
       expect(list).to.be.an.instanceof(collections.Cons);
+    });
+
+    it('should prepend a given element', function() {
+      expect(list.cons('hello').toArray()).to.deep.equal(['hello', 'paolo', 345, 'angioletti']);
     });
 
     it('should prepend a given prefix list', function() {

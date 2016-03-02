@@ -1,6 +1,6 @@
 {
   "name": "algojs-collections",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "It provides Javascript implementation of fundamental collections.",
   "main": "lib/index.js",
   "repository": {
