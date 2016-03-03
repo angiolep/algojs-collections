@@ -1,33 +1,47 @@
 # algojs-collections
-It provides Javascript implementation of fundamental collections.
+Fundamental data structures in Javascript.
 
 [![npm version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
 
-## Examples
-Here there are some examples. API docs are published <a href="http://angiolep.github.io/algojs-collections" target="_blank">here</a>.
-
-```
-npm install algojs-collections --save
-```
+## API docs
+API docs published <a href="http://angiolep.github.io/algojs-collections" target="_blank">here</a>.
 
 
-### LinkedList
+### List
+An highly optimized immutable linked list which grows by prepending elements.
 
 ```javascript
-var collections = require('algojs-collections');
+var algojs = require('algojs-collections');
 
-var list1 = collections.LinkedList.create();
-var list2 = list1.cons('Riding', 'a');
+var list1 = new algojs.List();
+var list3 = new algojs.List('is', 'nice');
 
-var list3 = collections.LinkedList.create('is', 'nice');
+// prepend an element
 var list4 = list3.cons('bike');
+var list2 = list1.cons('a').cons('Riding');
 
+// prepend a prefix list
 var list5 = list4.concat(list2);
 
 var println = function(elem) { console.log(elem); };
 list5.foreach(println);
 ```
+
+
+### Stack
+A mutable stack which grows like a linked list
+
+```javascript
+var algojs = require('algojs-collections');
+
+var stack = new algojs.Stack();
+stack.push('hello');
+stack.push('folks');
+
+var folks = stack.pop();
+```
+
 
 [npm-image]: https://badge.fury.io/js/algojs-collections.svg
 [npm-url]: https://badge.fury.io/js/algojs-collections
